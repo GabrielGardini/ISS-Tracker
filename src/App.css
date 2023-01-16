@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  position:fixed;
+
+}
+
+.App-logo {
+  height: 110vh;
+  width: 110vw;
+  margin: -25px;
+  position:fixed;
+
+}
+
+html, body, p {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+}
