@@ -21,7 +21,10 @@ function App() {
   
   const getLocation = async ()=>{
     setLoading(true);
-    const res = await axios.get('http://api.open-notify.org/iss-now.json')
+    const res = await axios.get('http://api.open-notify.org/iss-now.json', {method:'GET', mode:'no-cors', headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json',
+    }, })
 
     const {longitude, latitude} = await res.data.iss_position;
     setLongitude(parseFloat(longitude));
