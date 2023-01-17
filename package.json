@@ -1,7 +1,7 @@
 {
   "name": "iss-finder",
   "version": "0.1.0",
-  "homepage": "https://GabrielGardini.github.io/Iss-Tracker",
+  "homepage": "https://GabrielGardini.github.io/ISS-Tracker",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
