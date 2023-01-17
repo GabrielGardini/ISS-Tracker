@@ -21,11 +21,11 @@ function App() {
   
   const getLocation = async ()=>{
     setLoading(true);
-    const res = await axios.get('http://api.open-notify.org/iss-now.json')
-
-    const {longitude, latitude} = await res.data.iss_position;
-    setLongitude(parseFloat(longitude));
-    setLatitude(parseFloat(latitude));
+    const res = await axios.get('https://api.wheretheiss.at/v1/satellites/25544')
+    console.log(res);
+    // const {longitude, latitude} = await res.data.iss_position;
+    setLongitude(parseFloat(await res.data.longitude));
+    setLatitude(parseFloat(await res.data.longitude));
     setLoading(false);
     setTimeout(getLocation,15000)
 
