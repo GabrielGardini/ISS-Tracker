@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ISS-Tracker/static/css/main.32b50cbd.css",
-    "main.js": "/ISS-Tracker/static/js/main.2edf4f54.js",
+    "main.js": "/ISS-Tracker/static/js/main.387b402f.js",
     "static/media/sky2.jpg": "/ISS-Tracker/static/media/sky2.badeb11567d784fda314.jpg",
     "static/media/satellite.png": "/ISS-Tracker/static/media/satellite.20d68fcc3b21ba7bb961.png",
     "index.html": "/ISS-Tracker/index.html",
     "main.32b50cbd.css.map": "/ISS-Tracker/static/css/main.32b50cbd.css.map",
-    "main.2edf4f54.js.map": "/ISS-Tracker/static/js/main.2edf4f54.js.map"
+    "main.387b402f.js.map": "/ISS-Tracker/static/js/main.387b402f.js.map"
   },
   "entrypoints": [
     "static/css/main.32b50cbd.css",
-    "static/js/main.2edf4f54.js"
+    "static/js/main.387b402f.js"
   ]
 }
