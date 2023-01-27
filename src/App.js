@@ -1,6 +1,7 @@
 import './App.css';
 import sky2 from "./sky2.jpg";
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { useMediaQuery } from '@mui/material';
 import Map from './components/map';
@@ -15,6 +16,7 @@ function App() {
   const [longitude, setLongitude] = useState(0.1278);
   const [latitude, setLatitude] = useState(51.5074);
 
+
   useEffect(()=>{
     getLocation()
   },[]);
@@ -22,15 +24,13 @@ function App() {
   const getLocation = async ()=>{
     setLoading(true);
     const res = await axios.get('https://api.wheretheiss.at/v1/satellites/25544')
-    console.log(res);
     // const {longitude, latitude} = await res.data.iss_position;
     setLongitude(parseFloat(await res.data.longitude));
-    setLatitude(parseFloat(await res.data.longitude));
+    setLatitude(parseFloat(await res.data.latitude));
     setLoading(false);
     setTimeout(getLocation,15000)
 
   }
-
   return (
     <body className='App-logo' style={{backgroundImage: `url(${sky2})`}}>
       <Grid container sx={{p:5, display:'flex', justifyContent:'center',alignContent:'center', flexDirection:'column'}}>
